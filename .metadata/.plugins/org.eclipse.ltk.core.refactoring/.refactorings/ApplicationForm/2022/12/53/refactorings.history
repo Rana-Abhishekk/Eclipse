@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;FormServlet.java&apos; to &apos;FormApp/src/main/java&apos;&#x0A;- Original project: &apos;ApplicationForm&apos;&#x0A;- Destination element: &apos;FormApp/src/main/java&apos;&#x0A;- Original element: &apos;FormServlet.java&apos;" description="Copy compilation unit" destination="=FormApp/src\/main\/java" element1="/src\/main\/java&lt;{FormServlet.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1672055470219" units="1" version="1.0"/>
+</session>

@@ -1,0 +1,34 @@
+package com.user.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.user.entity.User;
+import com.user.repository.UserRepository;
+import com.xadmin.SpringBootCrud.bean.Subject;
+
+@Service
+public class UserServiceImpl implements UserService {
+
+	
+	// fake User List
+	
+	UserRepository userRepository;
+	@Override
+	public User getUser(Long Id) {
+		// TODO Auto-generated method stub
+		return userRepository.findByUserId(Id);
+		
+		
+	}
+	
+	public void updateUser(String userId, User user) {
+		// TODO Auto-generated method stub
+		User fetchedUser = userRepository.getByUserId(userId);
+		
+		
+		
+	}
+
+}

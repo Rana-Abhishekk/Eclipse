@@ -1,0 +1,62 @@
+package com.user.service;
+
+
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.user.entity.User;
+import com.user.repository.UserRepository;
+
+
+@Service
+public class UserServiceImpl implements UserService {
+
+	
+	// fake User List
+	@Autowired
+	UserRepository userRepository;
+	@Override
+	public User getUser(Long Id) {
+		// TODO Auto-generated method stub
+		return userRepository.findByUserId(Id);
+		
+		
+	}
+	
+	public void updateUser(String userId, User user) {
+		// TODO Auto-generated method stub
+		User fetchedUser = userRepository.getByUserId(userId);
+		fetchedUser.setName(user.getName());
+		
+		fetchedUser.setPhone(user.getPhone());
+		userRepository.save(fetchedUser);
+	}
+	public void deleteUser(String userId) {
+		User fetchedUser = userRepository.getByUserId(userId);
+		userRepository.delete(fetchedUser);
+	}
+	public void addUser(User user) {
+		if(!isEmailPresent(user)) {
+		userRepository.save(user);
+		}else {
+			 return;
+		}
+	}
+
+	private boolean isEmailPresent(User user) {
+		// TODO Auto-generated method stub
+		String email = user.getEmail();
+		return userRepository.findByEmail(email);
+		
+	}
+
+	@Override
+	public boolean isUserPresent(Long userId) {
+		// TODO Auto-generated method stub
+		String strUserId = userId+"";
+		return userRepository.findById(strUserId).isEmpty();
+	}
+	
+
+}

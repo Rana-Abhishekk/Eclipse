@@ -1,0 +1,4 @@
+GitRepositoriesView.GitDirectories=/home/ctp/eclipse-workspace/springmvc/.git\:/home/ctp/eclipse-workspace/dgmarket3/.git\:/home/ctp/eclipse-workspace/SpringExtraProject/dgmarket3/.git\:/home/ctp/Downloads/CRUD/.git\:/home/ctp/eclipse-workspace/FormApp/.git\:/home/ctp/eclipse-workspace/spring-security-jpa/.git\:/home/ctp/eclipse-workspace/springCore/.git\:/home/ctp/Downloads/SpringBootCrud/.git\:
+GitRepositoriesView.GitDirectories.relative=springmvc/.git\:dgmarket3/.git\:SpringExtraProject/dgmarket3/.git\:/home/ctp/Downloads/CRUD/.git\:FormApp/.git\:spring-security-jpa/.git\:springCore/.git\:/home/ctp/Downloads/SpringBootCrud/.git\:
+core_autoIgnoreDerivedResources=false
+eclipse.preferences.version=1

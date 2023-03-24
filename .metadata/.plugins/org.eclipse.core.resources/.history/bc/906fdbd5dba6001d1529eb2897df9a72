@@ -1,0 +1,47 @@
+package com.signup.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.signup.bean.User;
+import com.signup.repository.JpaRepo;
+
+import com.signup.service.SignupService;
+
+@RestController
+public class SignupController {
+
+	@Autowired
+	SignupService signupService;
+
+	@PostMapping("/signup")
+	public ResponseEntity<String> signup(@RequestBody User user) {
+
+		String response = signupService.signup(user);
+		// sending the mail
+		return ResponseEntity.status(HttpStatus.OK).body(response);
+	}
+
+	@GetMapping("/confirm-account")
+	public ResponseEntity<String> authenticateEmail(@RequestParam("email") String email) {
+		return signupService.handleAuthentication(email);
+
+	}
+
+}
+
+//@PostMapping("/signup")
+//public String signup(@RequestBody  User user) {
+//	if(jpaRepo.findByEmail(user.getEmail()) != null) return " Email already exists";
+//	signupService.signup(user);
+//	
+//	// sending the mail
+//    signupService.sendMail(user);
+//	return " Mail sent " ;
+//}

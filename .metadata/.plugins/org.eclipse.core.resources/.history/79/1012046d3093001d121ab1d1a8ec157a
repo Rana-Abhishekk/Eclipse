@@ -1,0 +1,27 @@
+package Stud.com.task.code;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class RepeatedElements {
+
+	public static void main(String[] args) {
+		Scanner scn = new Scanner(System.in);
+		int n = scn.nextInt();
+		int[] arr = new int[n];
+		List<Integer> li = new ArrayList<>();
+		int k=0;
+		int j=0;
+		for(int i=0;i<n;i++) {
+			if(arr[i]!=arr[i+1]) {
+				li.add(arr[i]);
+			}
+			if(i<n) {
+				li.add(arr[i]);
+			}
+		}
+		System.out.println(li);
+	}
+
+}

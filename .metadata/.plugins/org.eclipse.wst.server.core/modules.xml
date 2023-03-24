@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<modules>
+  <module moduleId="org.eclipse.jst.jee.server:FormApp" serverId="apache-tomcat-9.0.62 at localhost"/>
+  <module moduleId="org.eclipse.jst.j2ee.server:springmvc" serverId="apache-tomcat-9.0.62 at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:dispatch" serverId="apache-tomcat-9.0.62 at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:ApplicationForm" serverId="apache-tomcat-9.0.62 at localhost"/>
+</modules>

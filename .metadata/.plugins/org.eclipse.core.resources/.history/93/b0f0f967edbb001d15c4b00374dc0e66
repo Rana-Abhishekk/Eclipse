@@ -1,0 +1,28 @@
+package GlobalExceptions;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.apache.hc.core5.http.Message;
+import org.springframework.http.ResponseEntity;
+import org.springframework.validation.FieldError;
+import org.springframework.web.bind.MethodArgumentNotValidException;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
+
+@RestControllerAdvice
+public class GlobalExceptionHandler {
+	
+	public ResponseEntity<Map<String,String>> handleMethodArgsNotValidException(MethodArgumentNotValidException ex){
+		Map<String,String> resp = new HashMap<>();
+		ex.getBindingResult().getAllErrors().forEach((error)->{
+			String fieldName = ((FieldError) error).getField();
+			String message = error.getDefaultMessage();
+			resp.put(fieldName,message);
+				
+		});
+		
+		
+		return;
+	}
+
+}

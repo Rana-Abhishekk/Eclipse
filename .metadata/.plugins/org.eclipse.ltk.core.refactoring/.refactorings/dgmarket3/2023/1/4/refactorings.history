@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;README.md&apos; to &apos;com.dgmarket.notice.service.NoticeDocumentsService.java&apos;&#x0A;- Original project: &apos;dgmarket3&apos;&#x0A;- Destination element: &apos;com.dgmarket.notice.service.NoticeDocumentsService.java&apos;&#x0A;- Original element: &apos;README.md&apos;&#x0A;- Update references to refactored element" description="Move file" destination="/src\/main\/java=/gradle_scope=/main=/=/gradle_used_by_scope=/main,test=/&lt;com.dgmarket.notice.service{NoticeDocumentsService.java" element1="src/main/java/com/dgmarket/auth/README.md" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1674450505935" units="0" version="1.0"/>
+</session>

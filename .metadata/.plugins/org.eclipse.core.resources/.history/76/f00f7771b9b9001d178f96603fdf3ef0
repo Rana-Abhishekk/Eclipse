@@ -1,0 +1,39 @@
+package com.user.service;
+
+
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.user.entity.User;
+import com.user.repository.UserRepository;
+
+
+@Service
+public class UserServiceImpl implements UserService {
+
+	
+	// fake User List
+	@Autowired
+	UserRepository userRepository;
+	@Override
+	public User getUser(Long Id) {
+		// TODO Auto-generated method stub
+		return userRepository.findByUserId(Id);
+		
+		
+	}
+	
+	public void updateUser(String userId, User user) {
+		// TODO Auto-generated method stub
+		User fetchedUser = userRepository.getByUserId(userId);
+		fetchedUser.setName(user.getName());
+		fetchedUser.setContacts(user.getContacts());
+		fetchedUser.setPhone(user.getPhone());
+		userRepository.save(fetchedUser);
+		
+		
+		
+	}
+
+}

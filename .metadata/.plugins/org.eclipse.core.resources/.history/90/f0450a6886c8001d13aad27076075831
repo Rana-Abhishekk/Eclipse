@@ -1,0 +1,9 @@
+package com.User.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.User.entity.User;
+
+public interface UserRepo extends JpaRepository<User, Integer>{
+	
+}

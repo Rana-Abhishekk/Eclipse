@@ -1,0 +1,11 @@
+package labdas;
+
+public class LamdasPrac4 {
+
+	public static void main(String[] args) {
+		
+		Runnable r = () -> {
+			System.out.println("inside runnable");
+		};
+	}
+}

@@ -1,0 +1,40 @@
+package com.SpringBoot.userService;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.SpringBoot.user.User;
+import com.SpringBoot.userRepo.UserRepo;
+
+
+@Service
+public class UserService  {
+	@Autowired
+	UserRepo userRepo;
+	public  List<User> getUsersByCity(String city) {
+		List<User> users = new ArrayList<>();
+		 userRepo.findByCity(city).forEach(users::add);
+		 return users;
+		
+	}
+	public void addUser(User user) {
+		// TODO Auto-generated method stub
+		userRepo.save(user);
+		
+	}
+	public User getUserById(String id) {
+		return userRepo.findById(id).get();
+		}
+	public void updateByNative(User user) {
+		String id = user.getId();
+		String city = user.getCity();
+		String name = user.getName();
+		String phone= user.getPhone();
+		
+		userRepo.updatBynative(id,name,city,phone);
+	}
+		
+}

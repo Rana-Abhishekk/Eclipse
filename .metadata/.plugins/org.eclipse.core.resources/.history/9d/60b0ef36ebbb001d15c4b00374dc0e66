@@ -1,0 +1,5 @@
+package GlobalExceptions;
+
+public class GlobalExceptionHandler {
+
+}

@@ -1,0 +1,18 @@
+package com.Book.repository;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.Book.entity.Book;
+
+public interface BookRepo extends JpaRepository<Book, Integer> {
+
+	
+
+	List<Book> findAllByUserId(Integer id);
+
+	Optional<Book> findByBookId(Integer id);
+
+}

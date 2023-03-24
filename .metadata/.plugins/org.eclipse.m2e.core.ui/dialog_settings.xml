@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="/home/ctp/eclipse-workspace"/>
+			<item value="/home/ctp/eclipse-workspace/Spring"/>
+			<item value="/home/ctp/eclipse-workspace/springcore"/>
+			<item value="/home/ctp/eclipse-workspace/springcore/src/main/java/com/springcore/App.java"/>
+			<item value="/home/ctp/eclipse-workspace/FormApp/src/main/java/ModiChange.java"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="internal"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="com.spring.application"/>
+			<item value="com.spring.orm"/>
+			<item value="com.spring.search.springmvcsearch"/>
+			<item value="com.spring.MVC2"/>
+			<item value="com.spring.MVC1.spring.MVC1"/>
+			<item value="com.spring.MVC1"/>
+			<item value="com.spring.mvc"/>
+			<item value="com.springCore"/>
+		</list>
+		<list key="groupId">
+			<item value="com.spring.application"/>
+			<item value="com.spring.orm"/>
+			<item value="com.spring.search"/>
+			<item value="com.spring.MVC2"/>
+			<item value="com.spring.MVC1"/>
+			<item value="com.spring.mvc"/>
+			<item value="com.springCore"/>
+		</list>
+		<list key="artifactId">
+			<item value="com.application"/>
+			<item value="springorm"/>
+			<item value="springmvcsearch"/>
+			<item value="springMVC2"/>
+			<item value="spring.MVC1"/>
+			<item value="springMVC1"/>
+			<item value="springmvc"/>
+			<item value="springCore"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.dialogs.MavenRepositorySearchDialog">
+		<item key="width" value="480"/>
+		<item key="height" value="515"/>
+		<item key="x" value="2643"/>
+		<item key="y" value="193"/>
+	</section>
+	<section name="MavenCheckoutLocationPage">
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="scmUrl">
+		</list>
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="/home/ctp/eclipse-workspace/springmvc"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+</section>

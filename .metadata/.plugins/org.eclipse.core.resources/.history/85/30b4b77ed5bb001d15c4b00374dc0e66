@@ -1,0 +1,13 @@
+package com.user.service;
+
+import com.user.entity.User;
+
+public interface UserService {
+	public User getUser(Long Id);
+
+   public void updateUser(String userId, User user);
+
+public void deleteUser(String userId);
+
+public void addUser(User user);
+}

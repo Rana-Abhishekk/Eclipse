@@ -1,0 +1,18 @@
+package com.Book.controller;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.Book.entity.Book;
+
+@RestController
+@RequestMapping("book")
+public class BookController {
+
+	
+	
+	
+}

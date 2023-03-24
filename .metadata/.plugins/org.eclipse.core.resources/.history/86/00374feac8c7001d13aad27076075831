@@ -1,0 +1,78 @@
+package com.user.service;
+
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatusCode;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
+
+import com.user.entity.User;
+import com.user.repository.UserRepository;
+
+import jakarta.servlet.http.HttpServletResponse;
+
+
+
+
+@Service
+public class UserServiceImpl implements UserService {
+
+	
+	// fake User List
+	@Autowired
+	UserRepository userRepository;
+	@Override
+	public User getUser(Long Id) {
+		// TODO Auto-generated method stub
+		return userRepository.findByUserId(Id);
+		
+		
+	}
+	
+	public void updateUser(String userId, User user) {
+		// TODO Auto-generated method stub
+		User fetchedUser = userRepository.getByUserId(userId);
+		fetchedUser.setName(user.getName());
+		
+		fetchedUser.setPhone(user.getPhone());
+		userRepository.save(fetchedUser);
+	}
+	public void deleteUser(String userId) {
+		User fetchedUser = userRepository.getByUserId(userId);
+		
+		userRepository.delete(fetchedUser);
+	}
+	public ResponseEntity<String> addUser(User user) {
+		String regex = "^[A-Za-z0-9+_.-]+@(.+)$";
+		String email = user.getEmail();
+		Pattern pattern = Pattern.compile(regex);
+		Matcher matcher = pattern.matcher(email);
+		if(!matcher.matches()) {
+			return (ResponseEntity<String>) ResponseEntity.status(HttpServletResponse.SC_BAD_REQUEST);
+		}
+		if(!isEmailPresent(user)) {
+		userRepository.save(user);
+		return (ResponseEntity<String>) ResponseEntity.status(HttpServletResponse.SC_OK);
+		}else {
+			return (ResponseEntity<String>) ResponseEntity.status(HttpServletResponse.SC_BAD_REQUEST);
+		}
+	}
+
+	private boolean isEmailPresent(User user) {
+		// TODO Auto-generated method stub
+		String email = user.getEmail();
+		return userRepository.existsByEmail(email);
+		
+	}
+
+	@Override
+	public boolean isUserPresent(Long userId) {
+		// TODO Auto-generated method stub
+		String strUserId = userId+"";
+		return userRepository.findById(strUserId).isEmpty();
+	}
+	
+
+}

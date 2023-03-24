@@ -1,0 +1,5 @@
+package com.Book.entity;
+
+public class Book {
+
+}

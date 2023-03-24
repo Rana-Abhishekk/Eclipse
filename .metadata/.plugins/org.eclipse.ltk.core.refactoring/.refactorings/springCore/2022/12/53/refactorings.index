@@ -1,0 +1,29 @@
+1672218466832	Move compilation unit
+1672218475189	Delete element
+1672219747447	Delete element
+1672225125018	Encapsulate field 'subjects'
+1672226553789	Encapsulate field 'grades'
+1672226999298	Encapsulate field 'booksIssues'
+1672290278578	Delete element
+1672290330446	Delete element
+1672290736896	Rename package 'ci'
+1672291945501	Move compilation unit
+1672291956967	Move compilation unit
+1672291965373	Move compilation unit
+1672292008463	Move 'config.xml' to 'gen'
+1672293911339	Delete element
+1672294219901	Copy file
+1672294290420	Rename resource 'config.xml'
+1672294600370	Encapsulate field 'subjects'
+1672297688748	Copy elements
+1672297717678	Rename type 'Address'
+1672297733140	Rename type 'App'
+1672297753488	Rename type 'emp'
+1672297768626	Rename resource 'configCon.xml'
+1672309522697	Delete element
+1672309570735	Delete element
+1672312133411	Encapsulate field 'name'
+1672312143949	Encapsulate field 'city'
+1672378873777	Delete element
+1672379040418	Copy file
+1672379063712	Rename resource 'configCI.xml'
